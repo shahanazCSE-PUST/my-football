@@ -1,0 +1,403 @@
+/* Google Fonts */
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+main section, footer{
+    margin-bottom: 70px;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #2D25A0;
+}
+nav{
+    width: 1160px;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 42px;
+    margin: 0 auto;
+}
+nav .menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 0 36px;
+}
+.menu a, nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.hamburger-menu{
+    display: none;
+}
+.fa-sign-out-alt{
+    padding-right: 8px;
+}
+.login-btn {
+    background-color: #E02C6D;
+    width: 123px;
+    height: 44px;
+    padding: 10px, 24px, 10px, 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Banner */
+.banner{
+    background-color: #2D25A0;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-content: center;
+    grid-gap: 0px 30px;
+}
+.banner-leftpart, .banner-rightpart{
+    /* border: 1px solid red; */
+    overflow: hidden;
+    align-self: center;
+    justify-self: center;
+}
+.banner-rightpart img {
+    width: 556px;
+    height: 438px;
+    transition: width 1s;
+}
+.banner:hover .banner-rightpart img {
+    width: 656px;
+    height: 438px;
+}
+h1 {
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 80px;
+}
+.banner-rightpart {
+    padding: 86px 0;
+}
+
+.btn {
+    background-color: #E02C6D;
+    color: #fff;
+    width: 168px;
+    height: 44px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    /* padding: 10px 24px; */
+    /* use padding or following 3 lines  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn:hover {
+    background-image: linear-gradient( 69.7deg,  rgba(244,37,243,1) 1.4%, rgba(244,87,1,1) 36.2%, rgba(255,204,37,1) 72.2%, rgba(20,196,6,1) 113% );
+}
+.fa-arrow-right{
+    padding-left: 8px;
+}
+
+/* cards */
+.players-cards{
+    display: grid;
+    grid-template-columns: repeat(3,min-content);
+    justify-content: center;
+    justify-items: center;
+    grid-gap: 27px 30px;
+}
+.card{
+    width: calc(330px - 30px);
+    height: calc(474px - 30px);
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+h3 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #18191F;
+}
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #6C6C6C;
+}
+
+/* heighlights */
+h2{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    color: #0A0826;
+}
+.highlights{
+    display: grid;
+    grid-template-columns: repeat(2,min-content);
+    justify-content: center;
+    grid-gap: 27px 30px;
+    height: 384px;
+}
+.hightlights-leftpart, .hightlights-rightpart{
+    /* box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15); */
+    width: calc(510px - 30px);
+    padding: 15px;
+    align-self: center;
+}
+.hightlights-rightpart{
+    width: calc(510px - 0px);
+    padding: 0;
+    height: 384px;
+    overflow: hidden;
+}
+.hightlights-rightpart img {
+    width: 510px;
+    height: auto;
+}
+
+/* Champion Awards */
+.champion-awards h2 {
+    text-align: center;
+    margin-bottom: 24px;
+}
+.awards {
+    display: grid;
+    grid-template-columns: repeat(3,min-content);
+    justify-content: center;
+    justify-items: center;
+    grid-gap: 27px 30px;
+}
+.award {
+    width: calc(330px - 30px);
+    height: calc(474px - 30px);
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.award h3 {
+    text-align: center;
+    padding-top: 24px;
+}
+h3 span {
+    line-height: 64px;
+    font-size: 60px;
+    color: gold;
+}
+
+/* Sponsors */
+.sponsors h2 {
+    text-align: center;
+    padding-top: 24px;
+    margin-bottom: 24px;
+}
+.item {
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    justify-content: center;
+    justify-items: center;
+    grid-gap: 27px 30px;
+}
+.item img {
+    width: calc(330px - 30px);
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-picture img{
+    width: 484px;
+    height: 110px;
+}
+.social-media-icons{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.social-media-icons i{
+    padding: 12px;
+    border-radius: 50%;
+}
+a:hover .fab {
+    background-color: rgb(236, 236, 236);
+}
+footer p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #000;
+}
+.footer-picture, .social-media-icons {
+    margin-bottom: 20px;
+}
+
+/* Media Query */
+@media only screen and (max-width: 888px) {
+    header{
+        width: 100%;
+    }
+    nav{
+        width: calc(100% - 32px);
+    }
+    nav .menu {
+        position: absolute;
+        background-color: green;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        justify-items: center;
+        visibility: hidden;
+    }
+    .hamburger-menu{
+        display: block;
+    }
+    main section, footer{
+        margin-bottom: 48px;
+    }
+    .banner{
+        background-color: #2D25A0;
+        color: #fff;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+        justify-content: center;
+        align-content: center;
+        grid-gap: 24px 0px;
+    }
+    .banner-rightpart img {
+        width: 329px;
+        height: 259px;
+    }
+    h1 {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 50px;
+    }
+    .banner-leftpart, .banner-rightpart{
+        border: 1px solid red;
+        overflow: hidden;
+        align-self: center; /* for y axis up and down */
+
+        /* remove folloing two line for centering x axis */
+        justify-self: start;
+        padding-left: 16px;
+    }
+    .banner-rightpart {
+        padding: 60px 0;
+    }
+
+    /* Cards */
+    .players-cards{
+        display: grid;
+        grid-template-columns: repeat(1,min-content);
+        justify-content: center;
+        justify-items: center;
+        grid-gap: 24px 0px;
+    }
+    .card{
+        width: calc(330px - 30px);
+        height: calc(474px - 30px);
+        padding: 15px;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    }
+    
+    /* Highlights */
+    .highlights{
+        display: grid;
+        grid-template-columns: repeat(1,min-content);
+        grid-template-rows: repeat(2, min-content);
+        justify-content: center;
+        grid-gap: 24px 0px;
+        height: auto;
+    }
+    .hightlights-leftpart, .hightlights-rightpart{
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+        width: calc(330px - 30px);
+        padding: 15px;
+        align-self: center;
+    }
+    .hightlights-rightpart{
+        width: calc(330px - 0px);
+        padding: 0;
+        height: 249px;
+        overflow: hidden;
+    }
+    .hightlights-rightpart img {
+        width: 330px;
+        height: auto;
+    }
+
+    /* Champion Awards */
+.champion-awards h2 {
+    text-align: center;
+    margin-bottom: 24px;
+}
+.awards {
+    display: grid;
+    grid-template-columns: repeat(1,min-content);
+    justify-content: center;
+    justify-items: center;
+    grid-gap: 24px 0px;
+}
+.award {
+    width: calc(330px - 30px);
+    height: calc(474px - 30px);
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.award h3 {
+    text-align: center;
+    padding-top: 24px;
+}
+h3 span {
+    line-height: 64px;
+    font-size: 60px;
+    color: gold;
+}
+
+/* Sponsors */
+.sponsors h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    padding-top: 24px;
+}
+.item {
+    display: grid;
+    grid-template-columns: repeat(1,min-content);
+    justify-content: center;
+    justify-items: center;
+    grid-gap: 24px 0px;
+}
+.item img {
+    width: calc(330px - 30px);
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+    /* Footer */
+    .footer-picture img{
+        width: auto;
+        height: 63px;
+    }
+}
